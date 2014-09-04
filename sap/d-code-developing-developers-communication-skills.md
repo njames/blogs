@@ -1,24 +1,47 @@
 # Decoding the developers commmunication skills
 
-
-
 ## 01. RPL - recognition of prior learning
 	- who is developer?
 	- who has strong comms / inter personal skills?
 	- who has done a comms course / body lang / toast masters etc
     - who values communication as part of the software development process?    
-## 01 - Know yourself  / get to know others 
+    - power of commuunication? name some powerful commmunicators ( ml king/regan/ hitler/churchill/ )
 
-## 01. team  together evveryone achieves more
+## 01. Getting out of the code cave
+	- developers like quiet / focus 
+	- many done see commmunication as necessary
+	- to develop in your career it is essential to communicate well
+
+## 01 - Know yourself  / get to know others 
+	- if you dont know how you work - your strengths and weaknesses it will be harder to communicate effectively - get to know your blindspots and work around them
+	- the most important person to lead is yourself (maxwell quote)
+	- the most important person to communicate to is yourself
+	- keep working out what makes you tick, what your passions are, what your buttons are, who presses those buttons and why
+
+## 01. team  together everyone achieves more
+	- it takes a team to create great software
+	- no coder is an island
 	- work with others
 	- talk to others
+	- listen to others
+	- put aside prejustice (really pre judging - deciding you like or dont like someone or thing before you really get to know them)
+	- develop relationships with those who think opposite to you 
+	- that will challenge what you think and believe
 	- us v them / them = marketing / product owner / users
 
-## 02. developers = kingmaker - steven monkchips
+## 02. developers = kingmaker - steven o'grady
 	- might be the case but a king needs to commmunicate - 'the kings speech'
 	- present vision
 	- become a bridge to product owners / stakeholders
 	- sydney harbour bridge client in city - sap in sth syd 
+	- recognise the joy of jargon 
+	- every speciality has a jargon 
+	- communication is the transfer of an idea
+	- the communicator is responsible for the message getting across
+	- just because you have said your piece, doesnt mean that the audience has got it
+	- leave room to check that the message has been recieved loud and clear
+	- some cultures will say yes becuase they dont say no
+	- this means that you have to work harder to ensure that the message has been received
 
 ## 02. Personality disc / myers briggs / PF16 - Language - golden rule
 	- treat people as you would like to be treated
@@ -61,7 +84,6 @@
 	 - technical / non-technical
 	 - back to personalities - 
 	 - appreciation languages - time / gifts /  words / touch / service
-
  
 
 ## 05. Practicalities
@@ -73,7 +95,16 @@
     Confidence - comes from belief in yourself
     Fake it - pretend you are that confident person you know
 
+    Grab every opportunity to practise
+    You are communicating all the time
 
+## 03. Body language
+	-     
+
+
+## 06. Practise - Mad minute - talk for a minute on the following
+	- hana is legacy
+	- 
 
 ## 06. leadership = influence
 
