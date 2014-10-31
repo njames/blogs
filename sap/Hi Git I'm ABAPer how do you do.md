@@ -64,6 +64,8 @@ You don't even need to have a remote system to use Git. You can install git on y
 
 For most scenarios though, you will need a remote system that all members of your team can access. For this Github is the answer to your needs. Is it the only answer? No, there are others but it is a great place to start.
 
+So surf on over to Github and signup for an account. 
+
 
 
 
