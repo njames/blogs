@@ -1,6 +1,6 @@
 # 7 More great reasons for Ubuntu
 
-I wote a blog last month on just how much I have been enjoying Ubuntu as a desktop machine.
+I wrote a blog last month on just how much I have been enjoying Ubuntu as a desktop machine.
 
 I can't see myself going back - I am a total convert. 
 

@@ -42,6 +42,7 @@
 	- leave room to check that the message has been recieved loud and clear
 	- some cultures will say yes becuase they dont say no
 	- this means that you have to work harder to ensure that the message has been received
+	
 
 ## 02. Personality disc / myers briggs / PF16 - Language - golden rule
 	- treat people as you would like to be treated
@@ -98,6 +99,20 @@
     Grab every opportunity to practise
     You are communicating all the time
 
+
+## Communication 
+35% Verbal 
+65% Non verbal
+ - facial expressions
+ - tone of voice
+ - movement
+ - appearance
+ - eye contact
+ - gestures
+ - posture
+
+
+
 ## 03. Body language
 	-     
 
@@ -113,5 +128,95 @@
 ## 99. quiet
 
 
+
+
+
+
+## images
+Bridge - 
+https://www.flickr.com/photos/scottloftesness/12805095423
+
+Cave -
+https://www.flickr.com/photos/matthewvenn/3026210580
+
+Personality -
+https://www.flickr.com/photos/thomashawk/3332319267
+
+Lt Cmd Data
+http://en.memory-alpha.org/wiki/The_Ensigns_of_Command_(episode)
+
+team
+https://www.flickr.com/photos/defenceimages/9653672799
+
+Thinker
+https://www.flickr.com/photos/seatbelt67/502255276
+
+Flags -culture
+https://www.flickr.com/photos/borkurdotnet/691053039
+
+Communication
+https://www.flickr.com/photos/dcosand/5399855440
+
+public speaking
+https://www.flickr.com/photos/cnichele65/14040935946
+
+Glass half full
+http://www.leathersmilligan.com/2011/your-explanatory-style-explains-your-success-the-choice-is-yours/
+
+gamification -
+https://www.flickr.com/photos/vfsdigitaldesign/6077558810
+
+
+chasm - 
+https://www.flickr.com/photos/jbdodane/13717730973
+
+moon
+https://www.flickr.com/photos/nathanhayag/4469879452
+
+Surfer
+https://www.flickr.com/photos/sunova_surfboards/5588663436
+kingmaker
+https://www.flickr.com/photos/mauriciosopif/5712875310
+
+
+
+Ignore Everybody
+http://gapingvoid.com/ie/
+
+Introverts 
+https://www.flickr.com/photos/joebehr/14542612029
+
+web-developer
+http://mingle2.com/blog/view/web-developer-mind
+
+Corp-culture
+http://gapingvoid.com/corporate-culture/
+
+
+
+Other links
+http://www.sitepoint.com/12-tips-for-better-developer-communication/
+http://blog.smartbear.com/management/10-reasons-development-teams-dont-communicate/
+http://www.smashingmagazine.com/2009/08/14/how-to-effectively-communicate-with-developers/
+http://www.smashingmagazine.com/2014/06/27/communicating-effectively-in-projects/
+http://www.smashingmagazine.com/2014/06/30/facing-your-fears-approaching-people-for-research/#more-195803
+
+
+http://www.quora.com/How-do-I-get-developers-to-think-more-like-users
+
+http://www.businessinsider.com.au/best-jobs-for-every-personality-2014-9
+
+
+http://www.learning-styles-online.com/overview/
+
+Books
+Quiet
+http://goo.gl/6mPnzu
+
+21 Laws of leadership
+http://goo.gl/QHiEiB
+
+The new Kingmakers
+http://thenewkingmakers.com/table-of-contents/
 
 

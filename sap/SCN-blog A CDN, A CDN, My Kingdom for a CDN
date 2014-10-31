@@ -1,0 +1,24 @@
+# A CDN, A CDN, My Kingdom for a CDN
+
+```
+
+	11:56:57 nigeljames@DocBrown:/var/www/sapui5.app$ git clone git@github.com:SquareCloudPtyLtd/jsdelivr.git
+	Cloning into 'jsdelivr'...
+	remote: Counting objects: 76498, done.
+	remote: Compressing objects: 100% (45774/45774), done.
+	remote: Total 76498 (delta 28674), reused 76498 (delta 28674)
+	Receiving objects: 100% (76498/76498), 444.64 MiB | 458.00 KiB/s, done.
+	Resolving deltas: 100% (28674/28674), done.
+	Checking connectivity... done.
+	Checking out files: 100% (55155/55155), done.
+	12:20:22 nigeljames@DocBrown:/var/www/sapui5.app$ 
+
+```
+
+var http = require (“http”);
+http.createServer(function(request, response) {
+response.writeHead(200, {“Content-Type”: “text/plain”});
+    response.write(“Hello World!”);
+    response.end();
+}).listen(8080);
+console.log(“Server is listening on port 8080”);
