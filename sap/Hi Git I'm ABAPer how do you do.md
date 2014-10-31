@@ -43,6 +43,34 @@ While this is functional and it is not the best. Also note that only one person 
 
 So what's so great about Git. Well, for starters the file types involved in a OpenUI5 project don't have to be edited in SE80. In fact you can set up your system to work on your project locally on your machine and there are many great blogs here on SCN to help you with that. This means that you can work on your project on the move rather that having to be connected to the ABAP app server in the same way you need to in the ABAP world.
 
+Rather like I am doing right now :
+
+```
+
+	07:42:07 {master} ~/squarecloud/talks-and-blogs/blogs$ git commit -m 'Update Git Blog'
+	[master e427b77] Update Git Blog
+	 1 file changed, 56 insertions(+)
+	 create mode 100644 sap/Hi Git I'm ABAPer how do you do.md
+
+```
+
+(Alright, alright don't get ahead of yourself Nigel, most of these good readers have no idea what you are on about)
+
+# Back to the start.
+
+So Git is a distributed source code control system where pretty much everything happens locally and you are only need a network connection when you are pushing to the remote server.
+
+You don't even need to have a remote system to use Git. You can install git on your Linux, Mac or Windows system and use it to version whatever files you like without ever sharing your code. Personally I have done this when I was working on a project but even though I wasn't having to work with other team members. This enabled me to version code and rollback changes if they didn't work.
+
+For most scenarios though, you will need a remote system that all members of your team can access. For this Github is the answer to your needs. Is it the only answer? No, there are others but it is a great place to start.
+
+
+
+
+
+
+
+
 
 
 
