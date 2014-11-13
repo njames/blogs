@@ -192,6 +192,29 @@ Since we have content allready we are going to push our repo.
 
 Now if we refresh the GitHub repo page we can see all the commits made to it.
 
+The rest of the world can now clone our repo and find out about the NextBigThing.
+
+# Clone me baby, one more time
+
+If we look at the repository properties we can see there is a url that we can use to clone the repo. There are several protocols we can use. Firstly we can use http or (and this is my preference) we can use ssh. I prefer ssh because once I have added my public ssh key to GitHub that is the way I am identified and it is seemless. 
+
+The windows client uses http and you need to add your username and password. 
+
+So staying with the command line, this is how we clone:
+
+...
+
+# Summary
+
+So we have learned that git is a great distributed source control. We have learned how to init, add, commit and clone files to our reposititory.
+
+There is a lot more to get into with git but you can get started and then learn as you go. 
+
+I hope you have found this a useful introduction and in the coming months I will add more blogs to cover some of these points.
+
+Enjoy expanding your knowledge into git.
+
+
 
 
 
