@@ -9,22 +9,22 @@ So I proposed two abstracts to the community talk selection committee and they t
 
 As we got closer to the conference I was advised that one of other speakers that was selected had to withdraw and I was asked to prepare my second talk.
 
-This presentation was only delivered at #SAPtd in Las Vegas so all the people going to Berlin will miss out. For this reason and that there should be a bit of an intro to Git here on SCN. I thought I would distill my off the cuff talk into a short blog for the benifit of the ABAPers in the universe.
+This presentation was only delivered at #SAPtd in Las Vegas so all the people going to Berlin will miss out. For this reason and that there should be a bit of an intro to Git here on SCN. I thought I would distill my off the cuff talk into a short blog for the benefit of the ABAPers in the universe.
 
 # Welcome to Source Control
 
 So source control is not a new subject to ABAPers. We are used to putting our code into transport requests, which then enables the code to be delivered across the landscape and into production in an orderly manner.
 
-Let's for a moment think about what happens when you put a code artifact into a transport request. It's not that hard. You lock the object so that you and only you can work on the object at one time. Until you release your transport everyone else is prevented from doing anything to that object.
+Let's for a moment think about what happens when you put a code artifact into a transport request. It's not that hard. You lock the object so that you and only you can work on the object at one time. Until you release your transport, everyone else is prevented from doing anything to that object.
 
-This is all well and good but what happens in the following scenario?
+This is all well and good, but what happens in the following scenario?
 
 1. You are working on a new feature request.
 2. A bug is discovered in production that related directly to your code object.
 
 Well resolving the bug will obviously trump the new feature but you are halfway though your change and it will need to be parked while the emergency is dealt with.
 
-The challenge is you change request might have a whole bunch of other object that are not ready to go to prod, let alone ready for regression testing.
+The challenge is you change request might have a whole bunch of other objects that are not ready to go to prod, let alone ready for regression testing.
 
 So mostly you do something like the following:
 
@@ -60,15 +60,15 @@ Rather like I am doing right now :
 
 So Git is a distributed source code control system where pretty much everything happens locally and you are only need a network connection when you are pushing to the remote server.
 
-You don't even need to have a remote system to use Git. You can install git on your Linux, Mac or Windows system and use it to version whatever files you like without ever sharing your code. Personally I have done this when I was working on a project but even though I wasn't having to work with other team members. This enabled me to version code and rollback changes if they didn't work.
+You don't even need to have a remote system to use Git. You can install git on your Linux, Mac or Windows system and use it to version whatever files you like without ever sharing your code. Personally I have done this when I was working on a project even though I wasn't working with other team members. This enabled me to version code and rollback changes if they didn't work.
 
-For most scenarios though, you will need a remote system that all members of your team can access. For this GitHub is the answer to your needs. Is it the only answer? No, there are others but it is a great place to start.
+For most scenarios though, you will need a remote system that all members of your team can access. For this, GitHub is the answer to your needs. Is it the only answer? No, there are others but it is a great place to start.
 
 So surf on over to GitHub and signup for an account. 
 
 (insert image of GitHub initial screen)
 
-There are several options to consume GitHub content. Native apps, command line and the github site itself. I will focus on the command line in this blog because  even though the native GUI applications simplify everything so nicely, sometimes the power that the command line affords is the only way to get out of the muddle. So I like to build up the muscle memory in my fingers so that when it hits the fan and my colleague's Windows commit has clobbered my commit I can recover without getting into a "tissie".
+There are several options to consume GitHub content. Native apps, command line and the GitHub site itself. I will focus on the command line in this blog because  even though the native GUI applications simplify everything so nicely, sometimes the power that the command line affords is the only way to get out of the muddle. So I like to build up the muscle memory in my fingers so that when it hits the fan and my colleague's Windows commit has clobbered my commit I can recover without getting into a "tissie".
 
 # First the init
 
@@ -157,7 +157,7 @@ This work-add-commit loop is what you will do most with git.
 
 # Share and share a like
 
-We now need to share this idea with our stakeholders and team so we are going to create a repository on github and then push our work there for all to see.
+We now need to share this idea with our stakeholders and team so we are going to create a repository on GitHub and then push our work there for all to see.
 
 So we log onto GitHub and find the big green 'Add Repository' button. Personally, I love green for postive actions. 
 
@@ -179,16 +179,28 @@ A README.md is created if you select option one. This is a handy place to tell t
 
 The .gitignore file tells git which files to ignore when committing your code. This is handy if your IDE creates project files or there are secure files that are not appropriate to be shared publicly.
 
-Lastly the licence is a handy feature for open source project that need to have a licence to be considered open source.
+Lastly the licence is a handy feature for open source project that needs to have a licence to be considered open source.
 
-So with all that out of the way we press another Big Green Button and create our project.
+So, with all that out of the way, we press another Big Green Button and create our project.
 
 Git now presents us with options as to how to clone or push our repo.
 
 Since we have content allready we are going to push our repo. 
 
 
-(push commnds)
+	06:18:00 (master) ~/squarecloud/NextBigThing$ git remote add origin git@njames.github.com:njames/NextBigThing.git
+	10:09:57 (master) ~/squarecloud/NextBigThing$ git push -u origin master
+	Counting objects: 3, done.
+	Delta compression using up to 8 threads.
+	Compressing objects: 100% (2/2), done.
+	Writing objects: 100% (3/3), 414 bytes | 0 bytes/s, done.
+	Total 3 (delta 0), reused 0 (delta 0)
+	To git@njames.github.com:njames/NextBigThing.git
+	 * [new branch]      master -> master
+	Branch master set up to track remote branch master from origin.
+	10:10:44 (master) ~/squarecloud/NextBigThing$ 
+
+
 
 Now if we refresh the GitHub repo page we can see all the commits made to it.
 
@@ -202,17 +214,22 @@ The windows client uses http and you need to add your username and password.
 
 So staying with the command line, this is how we clone:
 
-...
+	git clone git@github.com:njames/NextBigThing.git 
 
 # Summary
 
-So we have learned that git is a great distributed source control. We have learned how to init, add, commit and clone files to our reposititory.
+So in this blog, we have learned that git is a great distributed source control system.
+
+We have learned how to:
+1. init
+2. add
+3. commit
+4. push
+5. clone 
 
 There is a lot more to get into with git but you can get started and then learn as you go. 
 
-I hope you have found this a useful introduction and in the coming months I will add more blogs to cover some of these points.
-
-Enjoy expanding your knowledge into git.
+I hope you have found this a useful introduction and if this topic is of interest I will expand some of these topics.
 
 
 

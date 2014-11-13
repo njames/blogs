@@ -6,17 +6,17 @@
 </ol>
 <p>So I proposed two abstracts to the community talk selection committee and they told me that they while they were very excited about both topics they could only take one and they would take the first one. Well I was excited, but to be honest, also a little dissapointed. As much as I wanted to talk on communication skills for developers I really wanted to introduce ABAPers to Git as a method of source code control as I know it will become very important as we move toward the HCP and OpenUI5.</p>
 <p>As we got closer to the conference I was advised that one of other speakers that was selected had to withdraw and I was asked to prepare my second talk.</p>
-<p>This presentation was only delivered at #SAPtd in Las Vegas so all the people going to Berlin will miss out. For this reason and that there should be a bit of an intro to Git here on SCN. I thought I would distill my off the cuff talk into a short blog for the benifit of the ABAPers in the universe.</p>
+<p>This presentation was only delivered at #SAPtd in Las Vegas so all the people going to Berlin will miss out. For this reason and that there should be a bit of an intro to Git here on SCN. I thought I would distill my off the cuff talk into a short blog for the benefit of the ABAPers in the universe.</p>
 <h1 id="welcome-to-source-control">Welcome to Source Control</h1>
 <p>So source control is not a new subject to ABAPers. We are used to putting our code into transport requests, which then enables the code to be delivered across the landscape and into production in an orderly manner.</p>
-<p>Let's for a moment think about what happens when you put a code artifact into a transport request. It's not that hard. You lock the object so that you and only you can work on the object at one time. Until you release your transport everyone else is prevented from doing anything to that object.</p>
-<p>This is all well and good but what happens in the following scenario?</p>
+<p>Let's for a moment think about what happens when you put a code artifact into a transport request. It's not that hard. You lock the object so that you and only you can work on the object at one time. Until you release your transport, everyone else is prevented from doing anything to that object.</p>
+<p>This is all well and good, but what happens in the following scenario?</p>
 <ol style="list-style-type: decimal">
 <li>You are working on a new feature request.</li>
 <li>A bug is discovered in production that related directly to your code object.</li>
 </ol>
 <p>Well resolving the bug will obviously trump the new feature but you are halfway though your change and it will need to be parked while the emergency is dealt with.</p>
-<p>The challenge is you change request might have a whole bunch of other object that are not ready to go to prod, let alone ready for regression testing.</p>
+<p>The challenge is you change request might have a whole bunch of other objects that are not ready to go to prod, let alone ready for regression testing.</p>
 <p>So mostly you do something like the following:</p>
 <ol style="list-style-type: decimal">
 <li>Copy all of your changes to notepad* and save the file for safekeeping.</li>
@@ -41,17 +41,108 @@
 <p>(Alright, alright don't get ahead of yourself Nigel, most of these good readers have no idea what you are on about)</p>
 <h1 id="back-to-the-start.">Back to the start.</h1>
 <p>So Git is a distributed source code control system where pretty much everything happens locally and you are only need a network connection when you are pushing to the remote server.</p>
-<p>You don't even need to have a remote system to use Git. You can install git on your Linux, Mac or Windows system and use it to version whatever files you like without ever sharing your code. Personally I have done this when I was working on a project but even though I wasn't having to work with other team members. This enabled me to version code and rollback changes if they didn't work.</p>
-<p>For most scenarios though, you will need a remote system that all members of your team can access. For this Github is the answer to your needs. Is it the only answer? No, there are others but it is a great place to start.</p>
-<p>So surf on over to Github and signup for an account.</p>
-<p>(insert image of Github initial screen)</p>
-<p>Now that you have done that lets see what you have available to you:</p>
-<p>You can explore the site in your own time but in the remainder of this introductory blog let me take you through the basis of the git workflow.</p>
+<p>You don't even need to have a remote system to use Git. You can install git on your Linux, Mac or Windows system and use it to version whatever files you like without ever sharing your code. Personally I have done this when I was working on a project even though I wasn't working with other team members. This enabled me to version code and rollback changes if they didn't work.</p>
+<p>For most scenarios though, you will need a remote system that all members of your team can access. For this, GitHub is the answer to your needs. Is it the only answer? No, there are others but it is a great place to start.</p>
+<p>So surf on over to GitHub and signup for an account.</p>
+<p>(insert image of GitHub initial screen)</p>
+<p>There are several options to consume GitHub content. Native apps, command line and the GitHub site itself. I will focus on the command line in this blog because even though the native GUI applications simplify everything so nicely, sometimes the power that the command line affords is the only way to get out of the muddle. So I like to build up the muscle memory in my fingers so that when it hits the fan and my colleague's Windows commit has clobbered my commit I can recover without getting into a &quot;tissie&quot;.</p>
 <h1 id="first-the-init">First the init</h1>
+<p>Let's assume that we will start locally, because you are on a long haul flight (with power) and have had a great new idea you want to code or write about. Lets call it NextBigThing.</p>
 <p>The first thing you are going to do is to initialise a folder to be tracked under source control.</p>
-<p>As with most git commands you can either do this locally with the GUI apps, on the command line or on Github's website.</p>
-<p>The command line is simply:</p>
-<pre><code>    git init
+<p>As I said we will start with the command line and look at other options later:</p>
+<pre><code>
+    05:56:24 ~/squarecloud$ mkdir NextBigThing
+    05:56:39 ~/squarecloud$ cd NextBigThing/
+    05:56:43 ~/squarecloud/NextBigThing$ git init
+    Initialized empty Git repository in /home/nigeljames/squarecloud/NextBigThing/.git/
+    05:56:46 (master) ~/squarecloud/NextBigThing$ 
+
 </code></pre>
-<p>Even though windows does not really have a great command line, GitHub Windows ships with a commandline shell that runs under powershell. Cool huh.</p>
-<p>The reason I like the command line so much is the even thought the native GUI application simplify everything so nicely sometimes the power that the commandline affords is the only way to get out of the muddle. So I like to build up the muscle memory in my fingers so that when it hits the fan and my colleague Windows commit has clobbered my</p>
+<p>So here we have created a new directory for our new exiting project and initialised it so that git can track its contents</p>
+<p>Next we will start editing our documents and or code. I will start by creating a ProjectOverview.md to get my ideas down.</p>
+<p>After editing that document for a while I need to see what is going on. I hit enter back on the command line.</p>
+<pre><code>05:56:46 (master) ~/squarecloud/NextBigThing$ subl ProjectOverview.md
+06:05:58 (master) ~/squarecloud/NextBigThing$ 
+06:08:00 {master} ~/squarecloud/NextBigThing$ </code></pre>
+<p>It is subtle in black and white but my command line prompt has changed from being round brackets and green to red curly brackets. This is my visual cue that my tracking is not up to date.</p>
+<p>So let's see what is going on:</p>
+<pre><code>06:08:00 {master} ~/squarecloud/NextBigThing$ ll
+total 16
+drwxrwxr-x  3 nigeljames nigeljames 4096 Nov 13 18:07 ./
+drwxrwxr-x 18 nigeljames nigeljames 4096 Nov 13 17:56 ../
+drwxrwxr-x  7 nigeljames nigeljames 4096 Nov 13 18:08 .git/
+-rw-rw-r--  1 nigeljames nigeljames  231 Nov 13 18:07 ProjectOverview.md
+06:12:01 {master} ~/squarecloud/NextBigThing$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+
+    ProjectOverview.md
+
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+06:12:09 {master} ~/squarecloud/NextBigThing$ </code></pre>
+<p>So looking at the directory listing I can see my new file and by checking git's status I can see that I have one untracked file.</p>
+<p>Git is nice and tells us what to do most of the time. It is telling me to add the file to be tracked. So let's do that:</p>
+<pre><code>06:12:09 {master} ~/squarecloud/NextBigThing$ git add ProjectOverview.md 
+06:14:10 {master} ~/squarecloud/NextBigThing$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)
+
+    new file:   ProjectOverview.md</code></pre>
+<p>It is now telling me that the tracked file needs to be committed. You can think of commiting to like saving a file. It is a snapshot of our file at that point in time.</p>
+<p>So let's go ahead and commit the file:</p>
+<pre><code>06:14:16 {master} ~/squarecloud/NextBigThing$ git commit -m &quot;Initial brainstorming for the NextBigThing&quot;
+[master (root-commit) 4ec926f] Initial brainstorming for the NextBigThing
+ 1 file changed, 5 insertions(+)
+ create mode 100644 ProjectOverview.md
+06:18:00 (master) ~/squarecloud/NextBigThing$ </code></pre>
+<p>Did you notice that the brackets have now changed back to curly?</p>
+<p>This work-add-commit loop is what you will do most with git.</p>
+<h1 id="share-and-share-a-like">Share and share a like</h1>
+<p>We now need to share this idea with our stakeholders and team so we are going to create a repository on GitHub and then push our work there for all to see.</p>
+<p>So we log onto GitHub and find the big green 'Add Repository' button. Personally, I love green for postive actions.</p>
+<p>(image)</p>
+<p>We have to fill out the Repository name which has to be unique under your account. We enter a description and decide if we are making this public or private. I want the world to know about my new idea so of course we are making this public.</p>
+<p>There are a couple of other options:</p>
+<ol style="list-style-type: decimal">
+<li>Initialize with a README</li>
+<li>Add .gitignore</li>
+<li>Add a licence</li>
+</ol>
+<p>As we have content for our repository already we are going to leave these blank but if you were creating a repo from scratch on the GitHub site it would be pretty handy to choose these options.</p>
+<p>A README.md is created if you select option one. This is a handy place to tell the world about your repo as it is displayed by default on the GitHub site.</p>
+<p>The .gitignore file tells git which files to ignore when committing your code. This is handy if your IDE creates project files or there are secure files that are not appropriate to be shared publicly.</p>
+<p>Lastly the licence is a handy feature for open source project that needs to have a licence to be considered open source.</p>
+<p>So, with all that out of the way, we press another Big Green Button and create our project.</p>
+<p>Git now presents us with options as to how to clone or push our repo.</p>
+<p>Since we have content allready we are going to push our repo.</p>
+<pre><code>06:18:00 (master) ~/squarecloud/NextBigThing$ git remote add origin git@njames.github.com:njames/NextBigThing.git
+10:09:57 (master) ~/squarecloud/NextBigThing$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 414 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To git@njames.github.com:njames/NextBigThing.git
+ * [new branch]      master -&gt; master
+Branch master set up to track remote branch master from origin.
+10:10:44 (master) ~/squarecloud/NextBigThing$ </code></pre>
+<p>Now if we refresh the GitHub repo page we can see all the commits made to it.</p>
+<p>The rest of the world can now clone our repo and find out about the NextBigThing.</p>
+<h1 id="clone-me-baby-one-more-time">Clone me baby, one more time</h1>
+<p>If we look at the repository properties we can see there is a url that we can use to clone the repo. There are several protocols we can use. Firstly we can use http or (and this is my preference) we can use ssh. I prefer ssh because once I have added my public ssh key to GitHub that is the way I am identified and it is seemless.</p>
+<p>The windows client uses http and you need to add your username and password.</p>
+<p>So staying with the command line, this is how we clone:</p>
+<pre><code>git clone git@github.com:njames/NextBigThing.git </code></pre>
+<h1 id="summary">Summary</h1>
+<p>So in this blog, we have learned that git is a great distributed source control system.</p>
+<p>We have learned how to: 1. init 2. add 3. commit 4. push 5. clone</p>
+<p>There is a lot more to get into with git but you can get started and then learn as you go.</p>
+<p>I hope you have found this a useful introduction and if this topic is of interest I will expand some of these topics.</p>
