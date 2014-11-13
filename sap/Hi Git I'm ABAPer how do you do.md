@@ -170,10 +170,66 @@ We have to fill out the Repository name which has to be unique under your accoun
 There are a couple of other options:
 
 1. Initialize with a README
-2. Add gitignore
+2. Add .gitignore
 3. Add a licence
 
-As 
+As we have content for our repository already we are going to leave these blank but if you were creating a repo from scratch on the GitHub site it would be pretty handy to choose these options.
+
+A README.md is created if you select option one. This is a handy place to tell the world about your repo as it is displayed by default on the GitHub site.
+
+The .gitignore file tells git which files to ignore when committing your code. This is handy if your IDE creates project files or there are secure files that are not appropriate to be shared publicly.
+
+Lastly the licence is a handy feature for open source project that need to have a licence to be considered open source.
+
+So with all that out of the way we press another Big Green Button and create our project.
+
+Git now presents us with options as to how to clone or push our repo.
+
+Since we have content allready we are going to push our repo. 
+
+
+(push commnds)
+
+Now if we refresh the GitHub repo page we can see all the commits made to it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
