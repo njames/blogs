@@ -68,31 +68,124 @@ So surf on over to GitHub and signup for an account.
 
 (insert image of GitHub initial screen)
 
-Now that you have done that lets see what you have available to you:
-
-You can explore the site in your own time but in the remainder of this introductory blog let me take you through the basis of the git workflow.
+There are several options to consume GitHub content. Native apps, command line and the github site itself. I will focus on the command line in this blog because  even though the native GUI applications simplify everything so nicely, sometimes the power that the command line affords is the only way to get out of the muddle. So I like to build up the muscle memory in my fingers so that when it hits the fan and my colleague's Windows commit has clobbered my commit I can recover without getting into a "tissie".
 
 # First the init
 
-Let's assume that we will start locally because you are on a long haul flight (with power) and have had a great new idea you want to code up
+Let's assume that we will start locally, because you are on a long haul flight (with power) and have had a great new idea you want to code or write about.
+Lets call it NextBigThing.
 
 The first thing you are going to do is to initialise a folder to be tracked under source control.
 
-As with most git commands you can either do this locally with the GUI apps, on the command line or on GitHub's website.
-
-The command line is simply:
-
-```
-	git init
+As I said we will start with the command line and look at other options later:
 
 ```
 
+	05:56:24 ~/squarecloud$ mkdir NextBigThing
+	05:56:39 ~/squarecloud$ cd NextBigThing/
+	05:56:43 ~/squarecloud/NextBigThing$ git init
+	Initialized empty Git repository in /home/nigeljames/squarecloud/NextBigThing/.git/
+	05:56:46 (master) ~/squarecloud/NextBigThing$ 
 
-Even though windows does not really have a great command line, GitHub Windows ships with a commandline shell that runs under powershell. Cool huh.
 
-The reason I like the command line so much is the even thought the native GUI application simplify everything so nicely sometimes the power that the commandline affords is the only way to get out of the muddle. So I like to build up the muscle memory in my fingers so that when it hits the fan and my colleague Windows commit has clobbered my commit I can recover without getting into a "tissie"
+```
 
-If you are creating a new repository on GitHub or using the windows (or mac) clients I think you will find it pretty easy. There are giant + buttons that make it really clear where to go to add something. 
+So here we have created a new directory for our new exiting project and initialised it so that git can track its contents
+
+Next we will start editing our documents and or code. I will start by creating a ProjectOverview.md to get my ideas down.
+
+After editing that document for a while I need to see what is going on. I hit enter back on the command line.
+
+	05:56:46 (master) ~/squarecloud/NextBigThing$ subl ProjectOverview.md
+	06:05:58 (master) ~/squarecloud/NextBigThing$ 
+	06:08:00 {master} ~/squarecloud/NextBigThing$ 
+
+
+It is subtle in black and white but my command line prompt has changed from being round brackets and green to red curly brackets. This is my visual cue that my tracking is not up to date.
+
+So let's see what is going on:
+
+	06:08:00 {master} ~/squarecloud/NextBigThing$ ll
+	total 16
+	drwxrwxr-x  3 nigeljames nigeljames 4096 Nov 13 18:07 ./
+	drwxrwxr-x 18 nigeljames nigeljames 4096 Nov 13 17:56 ../
+	drwxrwxr-x  7 nigeljames nigeljames 4096 Nov 13 18:08 .git/
+	-rw-rw-r--  1 nigeljames nigeljames  231 Nov 13 18:07 ProjectOverview.md
+	06:12:01 {master} ~/squarecloud/NextBigThing$ git status
+	On branch master
+
+	Initial commit
+
+	Untracked files:
+	  (use "git add <file>..." to include in what will be committed)
+
+		ProjectOverview.md
+
+	nothing added to commit but untracked files present (use "git add" to track)
+	06:12:09 {master} ~/squarecloud/NextBigThing$ 
+
+So looking at the directory listing I can see my new file and by checking git's status I can see that I have one untracked file.
+
+Git is nice and tells us what to do most of the time. It is telling me to add the file to be tracked. So let's do that:
+
+	06:12:09 {master} ~/squarecloud/NextBigThing$ git add ProjectOverview.md 
+	06:14:10 {master} ~/squarecloud/NextBigThing$ git status
+	On branch master
+
+	Initial commit
+
+	Changes to be committed:
+	  (use "git rm --cached <file>..." to unstage)
+
+		new file:   ProjectOverview.md
+
+It is now telling me that the tracked file needs to be committed. You can think of commiting to like saving a file. It is a snapshot of our file at that point in time.
+
+So let's go ahead and commit the file:
+
+
+	06:14:16 {master} ~/squarecloud/NextBigThing$ git commit -m "Initial brainstorming for the NextBigThing"
+	[master (root-commit) 4ec926f] Initial brainstorming for the NextBigThing
+	 1 file changed, 5 insertions(+)
+	 create mode 100644 ProjectOverview.md
+	06:18:00 (master) ~/squarecloud/NextBigThing$ 
+
+
+Did you notice that the brackets have now changed back to curly?
+
+This work-add-commit loop is what you will do most with git. 
+
+# Share and share a like
+
+We now need to share this idea with our stakeholders and team so we are going to create a repository on github and then push our work there for all to see.
+
+So we log onto GitHub and find the big green 'Add Repository' button. Personally, I love green for postive actions. 
+
+
+(image)
+
+
+We have to fill out the Repository name which has to be unique under your account. We enter a description and decide if we are making this public or private. I want the world to know about my new idea so of course we are making this public.
+
+There are a couple of other options:
+
+1. Initialize with a README
+2. Add gitignore
+3. Add a licence
+
+As 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
