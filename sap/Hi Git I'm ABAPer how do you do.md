@@ -62,10 +62,37 @@ So Git is a distributed source code control system where pretty much everything 
 
 You don't even need to have a remote system to use Git. You can install git on your Linux, Mac or Windows system and use it to version whatever files you like without ever sharing your code. Personally I have done this when I was working on a project but even though I wasn't having to work with other team members. This enabled me to version code and rollback changes if they didn't work.
 
-For most scenarios though, you will need a remote system that all members of your team can access. For this Github is the answer to your needs. Is it the only answer? No, there are others but it is a great place to start.
+For most scenarios though, you will need a remote system that all members of your team can access. For this GitHub is the answer to your needs. Is it the only answer? No, there are others but it is a great place to start.
 
-So surf on over to Github and signup for an account. 
+So surf on over to GitHub and signup for an account. 
 
+(insert image of GitHub initial screen)
+
+Now that you have done that lets see what you have available to you:
+
+You can explore the site in your own time but in the remainder of this introductory blog let me take you through the basis of the git workflow.
+
+# First the init
+
+Let's assume that we will start locally because you are on a long haul flight (with power) and have had a great new idea you want to code up
+
+The first thing you are going to do is to initialise a folder to be tracked under source control.
+
+As with most git commands you can either do this locally with the GUI apps, on the command line or on GitHub's website.
+
+The command line is simply:
+
+```
+	git init
+
+```
+
+
+Even though windows does not really have a great command line, GitHub Windows ships with a commandline shell that runs under powershell. Cool huh.
+
+The reason I like the command line so much is the even thought the native GUI application simplify everything so nicely sometimes the power that the commandline affords is the only way to get out of the muddle. So I like to build up the muscle memory in my fingers so that when it hits the fan and my colleague Windows commit has clobbered my commit I can recover without getting into a "tissie"
+
+If you are creating a new repository on GitHub or using the windows (or mac) clients I think you will find it pretty easy. There are giant + buttons that make it really clear where to go to add something. 
 
 
 
