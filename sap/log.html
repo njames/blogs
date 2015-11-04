@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- This file was created with the aha Ansi HTML Adapter. http://ziz.delphigl.com/tool_aha.php -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="application/xml+xhtml; charset=UTF-8" />
+<title>stdin</title>
+</head>
+<body style="color:white; background-color:black">
+<pre>
+Script started on Wed 04 Nov 2015 17:43:45 AEDT
+05:43:45 {master} <span style="color:yellow;font-weight:bold;">~/squarecloud/talks-and-blogs/blogs/sap</span>$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 5 commits.
+  (use &quot;git push&quot; to publish your local commits)
+
+Changes not staged for commit:
+  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+  (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
+
+	<span style="color:red;">modified:   Hi Git I'm ABAPer how do you do.md</span>
+	<span style="color:red;">modified:   HiGit.html</span>
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+
+	<span style="color:red;">../getting-back-into-it.md</span>
+	<span style="color:red;">../git-set-remote.md</span>
+	<span style="color:red;">HiGit2.html</span>
+	<span style="color:red;">HiGit2.md</span>
+	<span style="color:red;">gs-coloured.html</span>
+	<span style="color:red;">log.txt</span>
+	<span style="color:red;">ls.htm</span>
+
+no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
+05:43:53 {master} <span style="color:yellow;font-weight:bold;">~/squarecloud/talks-and-blogs/blogs/sap</span>$ git comimit -a -m &quot;updating blog&quot;
+[master adf00a5] updating blog
+ 2 files changed, 87 insertions(+), 60 deletions(-)
+05:44:21 {master} <span style="color:yellow;font-weight:bold;">~/squarecloud/talks-and-blogs/blogs/sap</span>$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 6 commits.
+  (use &quot;git push&quot; to publish your local commits)
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+
+	<span style="color:red;">../getting-back-into-it.md</span>
+	<span style="color:red;">../git-set-remote.md</span>
+	<span style="color:red;">HiGit2.html</span>
+	<span style="color:red;">HiGit2.md</span>
+	<span style="color:red;">gs-coloured.html</span>
+	<span style="color:red;">log.txt</span>
+	<span style="color:red;">ls.htm</span>
+
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+05:44:29 {master} <span style="color:yellow;font-weight:bold;">~/squarecloud/talks-and-blogs/blogs/sap</span>$ git add -A
+warning: The behavior of 'git add --all (or -A)' with no path argument from a
+subdirectory of the tree will change in Git 2.0 and should not be used anymore.
+To add content for the whole tree, run:
+
+  git add --all :/
+  (or git add -A :/)
+
+To restrict the command to the current directory, run:
+
+  git add --all .
+  (or git add -A .)
+
+With the current Git version, the command is restricted to the current directory.
+
+05:44:41 {master} <span style="color:yellow;font-weight:bold;">~/squarecloud/talks-and-blogs/blogs/sap</span>$ git add -A .
+05:44:55 {master} <span style="color:yellow;font-weight:bold;">~/squarecloud/talks-and-blogs/blogs/sap</span>$ git commit -m &quot;other odd tneemnp files&quot;
+[master ed12bda] other temp files
+ 5 files changed, 459 insertions(+)
+ create mode 100644 sap/HiGit2.html
+ create mode 100644 sap/HiGit2.md
+ create mode 100644 sap/gs-coloured.html
+ create mode 100644 sap/log.txt
+ create mode 100644 sap/ls.htm
+05:45:12 {master} <span style="color:yellow;font-weight:bold;">~/squarecloud/talks-and-blogs/blogs/sap</span>$ 
+05:45:16 {master} <span style="color:yellow;font-weight:bold;">~/squarecloud/talks-and-blogs/blogs/sap</span>$ git push
+ssh: Could not resolve hostname github.com: Name or service not known
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+05:45:39 {master} <span style="color:yellow;font-weight:bold;">~/squarecloud/talks-and-blogs/blogs/sap</span>$ git remote -v
+origin	git@njames.github.com:njames/blogs.git (fetch)
+origin	git@njames.github.com:njames/blogs.git (push)
+05:45:50 {master} <span style="color:yellow;font-weight:bold;">~/squarecloud/talks-and-blogs/blogs/sap</span>$ exit
+exit
+
+Script done on Wed 04 Nov 2015 17:46:47 AEDT
+</pre>
+</body>
+</html>

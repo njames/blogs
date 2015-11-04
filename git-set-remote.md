@@ -1,0 +1,1 @@
+git remote set-url origin git@njames.github.com:njames/zco.git
