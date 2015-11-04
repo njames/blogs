@@ -32,12 +32,12 @@
 <h1 id="enter-git">Enter Git</h1>
 <p>So what's so great about Git. Well, for starters the file types involved in a OpenUI5 project don't have to be edited in SE80. In fact you can set up your system to work on your project locally on your machine and there are many great blogs here on SCN to help you with that. This means that you can work on your project on the move rather that having to be connected to the ABAP app server in the same way you need to in the ABAP world.</p>
 <p>Rather like I am doing right now :</p>
-<pre><code>
-    07:42:07 {master} ~/squarecloud/talks-and-blogs/blogs$ git commit -m &#39;Update Git Blog&#39;
-    [master e427b77] Update Git Blog
-     1 file changed, 56 insertions(+)
-     create mode 100644 sap/Hi Git I&#39;m ABAPer how do you do.md
-</code></pre>
+
+<p><span style="font-family: 'courier new', courier;">    07:42:07 {master} ~/squarecloud/talks-and-blogs/blogs$ git commit -m &#39;Update Git Blog&#39;</span></p>
+<p><span style="font-family: 'courier new', courier;">    [master e427b77] Update Git Blog</span></p>
+<p><span style="font-family: 'courier new', courier;">     1 file changed, 56 insertions(+)</span></p>
+<p><span style="font-family: 'courier new', courier;">     create mode 100644 sap/Hi Git I&#39;m ABAPer how do you do.md</span></p>
+
 <p>(Alright, alright don't get ahead of yourself Nigel, most of these good readers have no idea what you are on about)</p>
 <h1 id="back-to-the-start.">Back to the start.</h1>
 <p>So Git is a distributed source code control system where pretty much everything happens locally and you are only need a network connection when you are pushing to the remote server.</p>
@@ -50,59 +50,71 @@
 <p>Let's assume that we will start locally, because you are on a long haul flight (with power) and have had a great new idea you want to code or write about. Lets call it NextBigThing.</p>
 <p>The first thing you are going to do is to initialise a folder to be tracked under source control.</p>
 <p>As I said we will start with the command line and look at other options later:</p>
-<pre><code>
-    05:56:24 ~/squarecloud$ mkdir NextBigThing
-    05:56:39 ~/squarecloud$ cd NextBigThing/
-    05:56:43 ~/squarecloud/NextBigThing$ git init
-    Initialized empty Git repository in /home/nigeljames/squarecloud/NextBigThing/.git/
-    05:56:46 (master) ~/squarecloud/NextBigThing$ 
 
-</code></pre>
+<p><span style="font-family: 'courier new', courier;">    05:56:24 ~/squarecloud$ mkdir NextBigThing</span></p>
+<p><span style="font-family: 'courier new', courier;">    05:56:39 ~/squarecloud$ cd NextBigThing/</span></p>
+<p><span style="font-family: 'courier new', courier;">    05:56:43 ~/squarecloud/NextBigThing$ git init</span></p>
+<p><span style="font-family: 'courier new', courier;">    Initialized empty Git repository in /home/nigeljames/squarecloud/NextBigThing/.git/</span></p>
+<p><span style="font-family: 'courier new', courier;">    05:56:46 (master) ~/squarecloud/NextBigThing$ </span></p>
+
+
 <p>So here we have created a new directory for our new exiting project and initialised it so that git can track its contents</p>
 <p>Next we will start editing our documents and or code. I will start by creating a ProjectOverview.md to get my ideas down.</p>
 <p>After editing that document for a while I need to see what is going on. I hit enter back on the command line.</p>
-<pre><code>05:56:46 (master) ~/squarecloud/NextBigThing$ subl ProjectOverview.md
-06:05:58 (master) ~/squarecloud/NextBigThing$ 
-06:08:00 {master} ~/squarecloud/NextBigThing$ </code></pre>
+
+<p><span style="font-family: 'courier new', courier;">05:56:46 (master) ~/squarecloud/NextBigThing$ subl ProjectOverview.md</span></p>
+<p><span style="font-family: 'courier new', courier;">06:05:58 (master) ~/squarecloud/NextBigThing$ </span></p>
+<p><span style="font-family: 'courier new', courier;">06:08:00 {master} ~/squarecloud/NextBigThing$ </span></p>
+
 <p>It is subtle in black and white but my command line prompt has changed from being round brackets and green to red curly brackets. This is my visual cue that my tracking is not up to date.</p>
 <p>So let's see what is going on:</p>
-<pre><code>06:08:00 {master} ~/squarecloud/NextBigThing$ ll
-total 16
-drwxrwxr-x  3 nigeljames nigeljames 4096 Nov 13 18:07 ./
-drwxrwxr-x 18 nigeljames nigeljames 4096 Nov 13 17:56 ../
-drwxrwxr-x  7 nigeljames nigeljames 4096 Nov 13 18:08 .git/
--rw-rw-r--  1 nigeljames nigeljames  231 Nov 13 18:07 ProjectOverview.md
-06:12:01 {master} ~/squarecloud/NextBigThing$ git status
-On branch master
 
-Initial commit
+<p><span style="font-family: 'courier new', courier;">06:08:00 {master} ~/squarecloud/NextBigThing$ ll</span></p>
+<p><span style="font-family: 'courier new', courier;">total 16</span></p>
+<p><span style="font-family: 'courier new', courier;">drwxrwxr-x  3 nigeljames nigeljames 4096 Nov 13 18:07 ./</span></p>
+<p><span style="font-family: 'courier new', courier;">drwxrwxr-x 18 nigeljames nigeljames 4096 Nov 13 17:56 ../</span></p>
+<p><span style="font-family: 'courier new', courier;">drwxrwxr-x  7 nigeljames nigeljames 4096 Nov 13 18:08 .git/</span></p>
+<p><span style="font-family: 'courier new', courier;">-rw-rw-r--  1 nigeljames nigeljames  231 Nov 13 18:07 ProjectOverview.md</span></p>
+<p><span style="font-family: 'courier new', courier;">06:12:01 {master} ~/squarecloud/NextBigThing$ git status</span></p>
+<p><span style="font-family: 'courier new', courier;">On branch master</span></p>
+<p><span style="font-family: 'courier new', courier;"></span></p>
+<p><span style="font-family: 'courier new', courier;">Initial commit</span></p>
+<p><span style="font-family: 'courier new', courier;"></span></p>
+<p><span style="font-family: 'courier new', courier;">Untracked files:</span></p>
+<p><span style="font-family: 'courier new', courier;">  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)</span></p>
+<p><span style="font-family: 'courier new', courier;"></span></p>
+<p><span style="font-family: 'courier new', courier;">    ProjectOverview.md</span></p>
+<p><span style="font-family: 'courier new', courier;"></span></p>
+<p><span style="font-family: 'courier new', courier;">nothing added to commit but untracked files present (use &quot;git add&quot; to track)</span></p>
+<p><span style="font-family: 'courier new', courier;">06:12:09 {master} ~/squarecloud/NextBigThing$ </span></p>
 
-Untracked files:
-  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
 
-    ProjectOverview.md
-
-nothing added to commit but untracked files present (use &quot;git add&quot; to track)
-06:12:09 {master} ~/squarecloud/NextBigThing$ </code></pre>
 <p>So looking at the directory listing I can see my new file and by checking git's status I can see that I have one untracked file.</p>
 <p>Git is nice and tells us what to do most of the time. It is telling me to add the file to be tracked. So let's do that:</p>
-<pre><code>06:12:09 {master} ~/squarecloud/NextBigThing$ git add ProjectOverview.md 
-06:14:10 {master} ~/squarecloud/NextBigThing$ git status
-On branch master
+<pre><code>
+<p><span style="font-family: 'courier new', courier;">06:12:09 {master} ~/squarecloud/NextBigThing$ git add ProjectOverview.md </span></p>
+<p><span style="font-family: 'courier new', courier;">06:14:10 {master} ~/squarecloud/NextBigThing$ git status</span></p>
+<p><span style="font-family: 'courier new', courier;">On branch master</span></p>
+<p><span style="font-family: 'courier new', courier;"></span></p>
+<p><span style="font-family: 'courier new', courier;">Initial commit</span></p>
+<p><span style="font-family: 'courier new', courier;"></span></p>
+<p><span style="font-family: 'courier new', courier;">Changes to be committed:</span></p>
+<p><span style="font-family: 'courier new', courier;">  (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)</span></p>
+<p><span style="font-family: 'courier new', courier;"></span></p>
+<p><span style="font-family: 'courier new', courier;">    new file:   ProjectOverview.md</span></p>
 
-Initial commit
-
-Changes to be committed:
-  (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)
-
-    new file:   ProjectOverview.md</code></pre>
 <p>It is now telling me that the tracked file needs to be committed. You can think of commiting to like saving a file. It is a snapshot of our file at that point in time.</p>
 <p>So let's go ahead and commit the file:</p>
-<pre><code>06:14:16 {master} ~/squarecloud/NextBigThing$ git commit -m &quot;Initial brainstorming for the NextBigThing&quot;
-[master (root-commit) 4ec926f] Initial brainstorming for the NextBigThing
- 1 file changed, 5 insertions(+)
- create mode 100644 ProjectOverview.md
-06:18:00 (master) ~/squarecloud/NextBigThing$ </code></pre>
+
+
+
+<p><span style="font-family: 'courier new', courier;">06:14:16 {master} ~/squarecloud/NextBigThing$ git commit -m &quot;Initial brainstorming for the NextBigThing</span></p>&quot;
+<p><span style="font-family: 'courier new', courier;">[master (root-commit) 4ec926f] Initial brainstorming for the NextBigThing</span></p>
+<p><span style="font-family: 'courier new', courier;"> 1 file changed, 5 insertions(+)</span></p>
+<p><span style="font-family: 'courier new', courier;"> create mode 100644 ProjectOverview.md</span></p>
+<p><span style="font-family: 'courier new', courier;">06:18:00 (master) ~/squarecloud/NextBigThing$ </span></p>
+
+
 <p>Did you notice that the brackets have now changed back to curly?</p>
 <p>This work-add-commit loop is what you will do most with git.</p>
 <h1 id="share-and-share-a-like">Share and share a like</h1>
@@ -123,24 +135,30 @@ Changes to be committed:
 <p>So, with all that out of the way, we press another Big Green Button and create our project.</p>
 <p>Git now presents us with options as to how to clone or push our repo.</p>
 <p>Since we have content allready we are going to push our repo.</p>
-<pre><code>06:18:00 (master) ~/squarecloud/NextBigThing$ git remote add origin git@njames.github.com:njames/NextBigThing.git
-10:09:57 (master) ~/squarecloud/NextBigThing$ git push -u origin master
-Counting objects: 3, done.
-Delta compression using up to 8 threads.
-Compressing objects: 100% (2/2), done.
-Writing objects: 100% (3/3), 414 bytes | 0 bytes/s, done.
-Total 3 (delta 0), reused 0 (delta 0)
-To git@njames.github.com:njames/NextBigThing.git
- * [new branch]      master -&gt; master
-Branch master set up to track remote branch master from origin.
-10:10:44 (master) ~/squarecloud/NextBigThing$ </code></pre>
+
+
+<p><span style="font-family: 'courier new', courier;">06:18:00 (master) ~/squarecloud/NextBigThing$ git remote add origin git@njames.github.com:njames/NextBigThing.git</span></p>
+<p><span style="font-family: 'courier new', courier;">10:09:57 (master) ~/squarecloud/NextBigThing$ git push -u origin master</span></NextBigThing.git>
+<p><span style="font-family: 'courier new', courier;">Counting objects: 3, done.</span></p>
+<p><span style="font-family: 'courier new', courier;">Delta compression using up to 8 threads.</span></p>
+<p><span style="font-family: 'courier new', courier;">Compressing objects: 100% (2/2), done.</span></p>
+<p><span style="font-family: 'courier new', courier;">Writing objects: 100% (3/3), 414 bytes | 0 bytes/s, done.</span></p>
+<p><span style="font-family: 'courier new', courier;">Total 3 (delta 0), reused 0 (delta 0)</span></p>
+<p><span style="font-family: 'courier new', courier;">To git@njames.github.com:njames/NextBigThing.git</span></p>
+<p><span style="font-family: 'courier new', courier;"> * [new branch]      master -&gt; master</span></p>
+<p><span style="font-family: 'courier new', courier;">Branch master set up to track remote branch master from origin.</span></p>
+<p><span style="font-family: 'courier new', courier;">10:10:44 (master) ~/squarecloud/NextBigThing$ </span></p>
+
+
 <p>Now if we refresh the GitHub repo page we can see all the commits made to it.</p>
 <p>The rest of the world can now clone our repo and find out about the NextBigThing.</p>
 <h1 id="clone-me-baby-one-more-time">Clone me baby, one more time</h1>
 <p>If we look at the repository properties we can see there is a url that we can use to clone the repo. There are several protocols we can use. Firstly we can use http or (and this is my preference) we can use ssh. I prefer ssh because once I have added my public ssh key to GitHub that is the way I am identified and it is seemless.</p>
 <p>The windows client uses http and you need to add your username and password.</p>
 <p>So staying with the command line, this is how we clone:</p>
-<pre><code>git clone git@github.com:njames/NextBigThing.git </code></pre>
+
+<p><span style="font-family: 'courier new', courier;">git clone git@github.com:njames/NextBigThing.git </span></p>
+
 <h1 id="summary">Summary</h1>
 <p>So in this blog, we have learned that git is a great distributed source control system.</p>
 <p>We have learned how to: 1. init 2. add 3. commit 4. push 5. clone</p>

@@ -1,5 +1,16 @@
 # Hi Git, I'm ABAPer how do you do?
 
+Have you gotten into Git yet? It is one of the new things to know when working with teams on SAPUI5 Projects. But first...
+
+## Flashback
+
+Earlier today I was looking for a draft blog that I had started with a
+simple title as a memory job for me to come back and flesh out. Then I
+found this blog that I had written up over the course of several plane
+trips worth of waiting in lounges last year. Given that I presented a similar Introductor GIT course for ABAPers this year (2015) at SAP TechEd  I thought I should dust this off and polish it up for your enjoyment and learning pleasure.
+
+## The Call for Papers
+
 When there was a call for community sessions before #SAPtd I jumped on the opportunity to present on two topics that I feel were going to be under-represented at the event.
 
 1. Developer Communication Skills
@@ -9,7 +20,7 @@ So I proposed two abstracts to the community talk selection committee and they t
 
 As we got closer to the conference I was advised that one of other speakers that was selected had to withdraw and I was asked to prepare my second talk.
 
-This presentation was only delivered at #SAPtd in Las Vegas so all the people going to Berlin will miss out. For this reason and that there should be a bit of an intro to Git here on SCN. I thought I would distill my off the cuff talk into a short blog for the benefit of the ABAPers in the universe.
+This presentation was only delivered at #SAPtd in Las Vegas so all the people going to Berlin (2014) will miss out. For this reason and that there should be a bit of an intro to Git here on SCN. I thought I would distill my off the cuff talk into a short blog for the benefit of the ABAPers in the universe.
 
 # Welcome to Source Control
 
@@ -80,13 +91,11 @@ The first thing you are going to do is to initialise a folder to be tracked unde
 As I said we will start with the command line and look at other options later:
 
 ```
-
 	05:56:24 ~/squarecloud$ mkdir NextBigThing
 	05:56:39 ~/squarecloud$ cd NextBigThing/
 	05:56:43 ~/squarecloud/NextBigThing$ git init
 	Initialized empty Git repository in /home/nigeljames/squarecloud/NextBigThing/.git/
 	05:56:46 (master) ~/squarecloud/NextBigThing$ 
-
 
 ```
 
