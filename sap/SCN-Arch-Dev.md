@@ -9,8 +9,8 @@ great demo of SAP Cloud for Analytics showing how the boardroom of the future
 might right a meeting with instant insight into current deals and projections of
 future earnings.
 
-Dirk ? gave an overview of the capabilities of the Hana Cloud Platform covering
-everything that Bjoern Gerke (sp) did in Barcelona Teched keynote without the
+Dirk Basenach gave an overview of the capabilities of the Hana Cloud Platform covering
+everything that [Björn Goerke](https://twitter.com/_bgoerke) did in Barcelona Teched keynote without the
 Mission to Mars.
 
 Sometimes you need to near a message a couple of times for it to sink in but for
@@ -62,7 +62,7 @@ To keep us from beer we had Simon Dale host a few examples of the
 technology we had been hearing about all day. Firstly from Keytree and their Las
 Vegas demo jam. Secondly from La Trobe university and their Simple Finance implementation story and lastly from a partner who gave us a hint of new exciting service without telling or showing much. I was able to quiz him later and found that it was still very much under wraps and was to be announced 'soon'.
 
-To top all that <insert name>  gave a very interesting talk about the architecture of Barcellona and compared that to the journey that we are on as Software Architects and Developers. 
+To top all that [Brian Pagano](https://twitter.com/brianpagano) gave a very interesting talk about the architecture of Barcellona and compared that to the journey that we are on as Software Architects and Developers. 
 
 
 ## Concluding thought
