@@ -33,7 +33,7 @@ What we know today as the Westpac bank was founded in one of her properties whic
 
 Her prominence and one of Australias first successful business women is now celebrated on the $20 note. Interestingly the image we see on the $20 is the only image that is recorded of her.
 
-At least two novels have been loosely based on her life 
+At least two novels have been loosely based on her life. In the 1980's a story called Sara Dane was brought to the TV screens in a mini-series treatment.
 
 Why this story is of particular interest to me is that Mary Reibey is my 4-Greats Grandmother and whenever I crack a $50 I always try to spend less than $10 so that I can get two $20 notes.
 
@@ -43,5 +43,10 @@ And this my friends is how Mary Reibey went from Notoriety to Notable.
 
 
 
-
+http://adb.anu.edu.au/biography/reibey-mary-2583
 http://rubyconnection.com.au/insights/women-in-business/mary-reibey.aspx
+http://banknotes.rba.gov.au/assets/pdf/biographies/mary-reibey.pdf
+http://www.reibeyinstitute.org.au/about/mary-reibey/
+https://en.wikipedia.org/wiki/Mary_Reibey
+https://en.wikipedia.org/wiki/Sara_Dane
+http://womenintheblack.com.au/mary-reibey-one-of-australias-first-female-entrepreneurs/
