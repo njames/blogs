@@ -2,7 +2,7 @@
 
 The other day I poked the bear. Bears for the most part are things that should be left to their own devices as my Canadian friends will attest. 
 
-The bear in this case was Dennis Howlett who has been a long time friend in the enterprisy space I met back as part of the media and influencers team at Sapphire and Teched events aroutn 2006. 
+The bear in this case was Dennis Howlett who has been a long time friend in the enterprisey space I met back as part of the media and influencers team at Sapphire and Teched events around 2006. 
 
 Dennis was asking about the new ESME as part of a conversation about Diversity amoungst the SAP Mentors. (That is a blog for another day)
 
@@ -32,7 +32,7 @@ My attempt with this blog is to try and bring some of those opinions into one pl
 5. Adoption of both of these toolsets are woefully low (Please see point 2.)
 6. These are exactly the tools that we need to create CI/CD platforms for SAP landscapes.
 
-There. If you want to skip to the next blog... go for it but first identify what culture if happening amoungst your ABAPers or your offshore team. 
+There. If you want to skip to the next blog... go for it but first identify what culture is happening amoungst your ABAPers or your offshore team. 
 
 If you want to enjoy the rest of the story then fasten your seatbelts, return your tray table to the upright position and hold on.
 
@@ -44,9 +44,9 @@ Am you saying that ABAP is not doing this? I mean that is a pretty provocative, 
 
 Yes it is provocative and no - ABAP is innovating ( Hi [Horst](https://people.sap.com/horst.keller) ) There are incredibly talentent people inside and outside SAP pushing to improve the language, toolset and culture to become the best that is can be and when they are finished they will go some more.
 
-The problem is that good ol' ABAP is for all intents closed source prorietory language. My other two favourite languages that include the letter P ( Python and PHP ) are not. They have continually innovated around their core. Just the other day I saw [Zeev Suraski](https://twitter.com/zeevs) one of the co-architects of PHP saying that the [next release of PHP](https://twitter.com/andigutmans/status/1013291330917711872) would be [4-5 times faster](https://www.phpclasses.org/blog/post/493-php-performance-evolution.html#improvements) than version 7. This is not bad given that version 7 was twice as fast as version 5.x that preceeded it.
+The problem is that good ol' ABAP is for all intents closed source prorietory language. My other two favourite languages that include the letter P ( [Python](http://python.org) and [PHP](http://php.net/) ) are not. They have continually innovated around their core. Just the other day I saw [Zeev Suraski](https://twitter.com/zeevs) one of the co-architects of PHP saying that the [next release of PHP](https://twitter.com/andigutmans/status/1013291330917711872) would be [4-5 times faster](https://www.phpclasses.org/blog/post/493-php-performance-evolution.html#improvements) than version 7. This is not bad given that version 7 was twice as fast as version 5.x that preceeded it.
 
-What languages carry with them - more than anything else is legacy baggage. PHP certainly does - and routinely get bagged for it but many companies including Facebook, Slack, and Mailchimp have PHP at the heart of their business and serve many millions of customers. Enterprisey enought for you?. ABAP coming from its FORTRAN and COBOL roots has a very verbose nature and weird keywords. That's why we "love" it right? [Many](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-US/index.htm?file=abennews-750.htm) [improvements](https://help.sap.com/http.svc/rc/abapdocu_752_index_htm/7.52/en-US/index.htm) over the years have been welcome and the code we write in ABAP today is not the code we wrote 20 years ago.
+What languages carry with them - more than anything else is legacy baggage. PHP certainly does - and routinely get bagged for it but many companies including Facebook, Slack, and Mailchimp have PHP at the heart of their business and serve many millions of customers. Enterprisey enought for you? ABAP, coming from its FORTRAN and COBOL roots has a very verbose nature and weird keywords. That's why we "love" it right? [Many](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-US/index.htm?file=abennews-750.htm) [improvements](https://help.sap.com/http.svc/rc/abapdocu_752_index_htm/7.52/en-US/index.htm) over the years have been welcome and the code we write in ABAP today is not the code we wrote 20 years ago.
 
 What they also bring is toolsets, "tecosystems" ( Thanks [@sogrady](https://twitter.com/sogrady) ) and a culture that grows up around them. 
 
@@ -79,7 +79,7 @@ And there you have it:
 	* Automatic Migration
 	* Branch based deployment
 
-People like [@grmpyprogrammer](https://twitter.com/grmpyprogrammer) have been preaching Unit Testing to the PHP Community for years, probably 18 years. The toolsets and workflow are well established and while it has taken people like Chris years and years of banging the drum the message has gotten through. 
+People like [@grmpyprogrammer](https://twitter.com/grmpyprogrammer), Chris Hartjes, have been preaching Unit Testing to the PHP Community for years, probably 18 years. The toolsets and workflow are well established and while it has taken people like Chris years and years of banging the drum the message has gotten through. 
 
 ABAP Unit has been with us for at least a decade but how many of us unit test our ABAP code? How many of the 'offshore'	code factories include ABAP Unit tests as part of their deliverable?
 
@@ -113,7 +113,7 @@ And the kicker which really sums up the ABAP Culture is this:
 
 Personally - I have never wanted to stay with my own set of tools. I am not an ABAPer. I solve problems that can (sometimes) be solved with a computer program and I am happy to say that over the years I have contributed to many sucessful implementations just as I have contributed to things that have never seen the light of production.
 
-About four years ago I took on a client who was the farthest from SAP as anyone could imagine. They were a content platform startup. Small team using PHP and a little framework called [Laravel](https://laravel.com/). Thankfully they didn't let me at the code. I did a more robust data replication POC for them. While I was there I learned a lot about how this team used:
+About four years ago I took on a client who was the farthest from SAP as anyone could imagine. They were a content platform startup. Small team using PHP and a little framework called [Laravel](https://laravel.com/). Thankfully they didn't let me at the code. I did a more robust data replication proof of concept for them. While I was there I learned a lot about how this team used:
 
 	1. Unit Testing
 	2. Decentralised Branch Based Repository
@@ -126,4 +126,9 @@ So here is the cultural challenge to all those who are die hard ABAPers. You nee
 
 I hope this has raised a thought and sparked more conversation. 
 
+Let's not be doing something because it is Not Invented Here.
+
 I will leave you with the [Knights who say NIH](https://www.youtube.com/watch?v=zIV4poUZAQo)
+
+
+[and yes I wrote this blog in [markdown](http://commonmark.org/) using [Sublime Text 3](https://sublimetext.com/3) and used github to [version control it](https://github.com/njames/blogs/blob/master/sap/SCN%20-%20ABAP%20-%20The%20Special%20Snowflake.md) ]
