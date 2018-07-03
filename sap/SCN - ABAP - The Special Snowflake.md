@@ -74,10 +74,10 @@ Chris Paine nailed it early on:
 
 
 And there you have it: 
-	* Unit Test
-	* Decentralised Branch Based Repository
-	* Automatic Migration
-	* Branch based deployment
+1. Unit Testing
+2. Decentralised Branch Based Repository
+3. Automatic Migration
+4. Branch based deployment
 
 People like [@grmpyprogrammer](https://twitter.com/grmpyprogrammer), Chris Hartjes, have been preaching Unit Testing to the PHP Community for years, probably 18 years. The toolsets and workflow are well established and while it has taken people like Chris years and years of banging the drum the message has gotten through. 
 
@@ -115,10 +115,10 @@ Personally - I have never wanted to stay with my own set of tools. I am not an A
 
 About four years ago I took on a client who was the farthest from SAP as anyone could imagine. They were a content platform startup. Small team using PHP and a little framework called [Laravel](https://laravel.com/). Thankfully they didn't let me at the code. I did a more robust data replication proof of concept for them. While I was there I learned a lot about how this team used:
 
-	1. Unit Testing
-	2. Decentralised Branch Based Repository
-	3. Automatic Migration
-	4. Branch based deployment
+1. Unit Testing
+2. Decentralised Branch Based Repository
+3. Automatic Migration
+4. Branch based deployment
 
 Sound familiar? Every other team and platform does this. Ethan is right. ABAP is a Special Snowflake.
 
